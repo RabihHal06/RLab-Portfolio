@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 40% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 40% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 40% 11%;
+    --primary: 210 67% 15%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 9% 46%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 43 37% 61%;
+    --accent-foreground: 210 40% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 43 37% 61%;
+    --radius: 0.875rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.06)] border border-rlab-grey-light/50;
+  }
+
+  .gold-gradient {
+    @apply bg-gradient-to-r from-rlab-gold-soft to-rlab-gold-deep;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-rlab-navy-royal to-rlab-gold-soft;
+  }
+
+  .rlab-shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .rlab-shadow-md {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  .rlab-shadow-lg {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  }
+}
