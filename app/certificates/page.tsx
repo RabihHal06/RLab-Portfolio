@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { ExternalLink, FileText } from 'lucide-react';
+import { ExternalLink, FileText, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -120,7 +120,7 @@ export default function CertificatesPage() {
           {selectedCert && (
             <>
               <DialogHeader>
-                <div className="flex items-start justify-between">
+                <div className="flex items-start justify-between mb-4">
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
                       <DialogTitle className="text-2xl text-white">{selectedCert.title}</DialogTitle>
@@ -132,18 +132,28 @@ export default function CertificatesPage() {
                     </div>
                     <p className="text-white/70">{selectedCert.issuer}</p>
                   </div>
-                  {selectedCert.credential_url && (
-                    <a
-                      href={selectedCert.credential_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                  <div className="flex gap-2">
+                    {selectedCert.credential_url && (
+                      <a
+                        href={selectedCert.credential_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button className="px-4 py-2 bg-rlab-gold-soft text-white font-medium rounded-lg hover:bg-rlab-gold-deep transition-all inline-flex items-center text-sm">
+                          <ExternalLink className="mr-2 w-4 h-4" />
+                          Verify
+                        </button>
+                      </a>
+                    )}
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      onClick={() => setSelectedCert(null)}
+                      className="text-white/70 hover:text-white hover:bg-white/10 rounded-lg"
                     >
-                      <button className="px-4 py-2 bg-rlab-gold-soft text-white font-medium rounded-lg hover:bg-rlab-gold-deep transition-all inline-flex items-center text-sm">
-                        <ExternalLink className="mr-2 w-4 h-4" />
-                        Verify
-                      </button>
-                    </a>
-                  )}
+                      <X className="w-5 h-5" />
+                    </Button>
+                  </div>
                 </div>
               </DialogHeader>
               <div className="space-y-4">
