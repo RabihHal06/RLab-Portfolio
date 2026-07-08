@@ -57,7 +57,7 @@ export function Footer() {
         {/* SUBTITLE */}
         <p className="text-rlab-text-dark/70 max-w-xl mx-auto text-base mb-10 leading-relaxed">
           {settings?.hero_subtitle ||
-            'Building Real-World Systems in Data Analytics and AI Automation'}
+            'Bridging Technology & Business · 14+ Years · MENA Region'}
         </p>
 
         {/* LINKS (centered like Apple style) */}
