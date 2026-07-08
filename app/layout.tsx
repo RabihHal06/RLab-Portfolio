@@ -8,8 +8,8 @@ import { Toaster } from '@/components/ui/toaster';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'R-Lab | Digital Innovation Portfolio',
-  description: 'Showcasing digital innovation, AI automations, and business intelligence solutions',
+  title: 'Rabih El Halabi | Senior Business Analyst & Implementation Consultant | Dubai, UAE',
+  description: 'Senior Business Analyst and Implementation Consultant with 14+ years across enterprise software, Higher Education SIS, and regional support across 7 countries in the MENA region. Available for BA, Implementation, and TAM roles in Dubai, UAE.',
   icons: {
     icon: '/api/favicon',
     shortcut: '/api/favicon',
