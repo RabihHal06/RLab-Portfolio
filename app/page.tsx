@@ -223,19 +223,27 @@ export default async function HomePage() {
                     <CardContent className="space-y-3">
                       <div className="flex items-center gap-3">
                         <div className="w-2 h-2 rounded-full bg-rlab-gold-soft"></div>
-                        <span className="text-sm">Data Analytics</span>
+                        <span className="text-sm">Business Analysis & Requirements Gathering</span>
                       </div>
                       <div className="flex items-center gap-3">
                         <div className="w-2 h-2 rounded-full bg-rlab-gold-soft"></div>
-                        <span className="text-sm">AI Automation</span>
+                        <span className="text-sm">Software Implementation & System Migrations</span>
                       </div>
                       <div className="flex items-center gap-3">
                         <div className="w-2 h-2 rounded-full bg-rlab-gold-soft"></div>
-                        <span className="text-sm">Business Systems</span>
+                        <span className="text-sm">AI-Powered Automation</span>
                       </div>
                       <div className="flex items-center gap-3">
                         <div className="w-2 h-2 rounded-full bg-rlab-gold-soft"></div>
-                        <span className="text-sm">Entrepreneurship</span>
+                        <span className="text-sm">MENA Regional Operations (7 Countries)</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-2 h-2 rounded-full bg-rlab-gold-soft"></div>
+                        <span className="text-sm">SQL Server & Data Analytics</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-2 h-2 rounded-full bg-rlab-gold-soft"></div>
+                        <span className="text-sm">EdTech Domain Expertise (12+ Years)</span>
                       </div>
                     </CardContent>
                   </Card>
@@ -247,17 +255,12 @@ export default async function HomePage() {
                     <CardContent className="space-y-4">
                       <div>
                         <h4 className="font-semibold text-rlab-navy-deep mb-1">Rabela Pastry</h4>
-                        <p className="text-sm text-rlab-text-dark/70">Boutique bakery brand</p>
+                        <p className="text-sm text-rlab-text-dark/70">Boutique pastry brand, Dubai</p>
                       </div>
                       <div className="h-px bg-rlab-grey-light"></div>
                       <div>
-                        <h4 className="font-semibold text-rlab-navy-deep mb-1">TrackLane</h4>
-                        <p className="text-sm text-rlab-text-dark/70">Digital operations system</p>
-                      </div>
-                      <div className="h-px bg-rlab-grey-light"></div>
-                      <div>
-                        <h4 className="font-semibold text-rlab-navy-deep mb-1">SABIS</h4>
-                        <p className="text-sm text-rlab-text-dark/70">Software support role</p>
+                        <h4 className="font-semibold text-rlab-navy-deep mb-1">R-Lab</h4>
+                        <p className="text-sm text-rlab-text-dark/70">AI-powered consulting & automation</p>
                       </div>
                     </CardContent>
                   </Card>
